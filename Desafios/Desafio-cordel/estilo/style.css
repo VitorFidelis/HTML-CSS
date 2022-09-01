@@ -1,13 +1,26 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2? family= Passion+One & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Satisfy & display=swap');
+
+/*Declarando as variaveis*/
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', cursiva;
+    --fonte3:'Satisfy', cursiva;
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html,body{
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -19,6 +32,8 @@ header{
 header > h1{
     padding-top: 50px; 
     font-variant: small-caps;/*Tambem Deixa a letra maiuscula->text-transform: uppercase;*/
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header > p{
@@ -40,6 +55,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;/*Causa um espaçamento entre as frazses*/
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal{
@@ -53,7 +70,8 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.205);
 
 }
